@@ -1,6 +1,5 @@
-/* for person tabs on the exec-board page */
+/* person tabs on the exec-board page */
 .person-row {
-    margin-top: 30px;
     margin-bottom: 30px
 }
 
@@ -9,11 +8,21 @@
     height:220px;
 }
 
-/*  for the navbar */
+/* navbar */
 .navbar {
     background-color: #523528;
+    margin-bottom: 20px;
 }
 
 .navbar-brand, .nav-link {
+    color: white;
+}
+
+/* footer */
+footer {
+    background-color: #523528;
+}
+
+.footer-text {
     color: white;
 }
