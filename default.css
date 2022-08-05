@@ -1,3 +1,4 @@
+/* for person tabs on the exec-board page */
 .person-row {
     margin-top: 30px;
     margin-bottom: 30px
@@ -6,4 +7,13 @@
 .person-image {
     width:180px;
     height:220px;
+}
+
+/*  for the navbar */
+.navbar {
+    background-color: #523528;
+}
+
+.navbar-brand, .nav-link {
+    color: white;
 }
