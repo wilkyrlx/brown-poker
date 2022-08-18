@@ -24,11 +24,17 @@
     <!-- custom javascript -->
     <script src="script.js"></script>
 
+    <!-- Disable caching for development-->
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+
+
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <!-- ## UNIVERSAL 1.3 ## -->
-    <!-- A brown horizontal navbar that becomes vertical on small screens -->
+    <!-- ## UNIVERSAL 1.4 ## -->
+    <!-- A brown horizontal navbar that becomes vertical on small screens with hamburger -->
     <nav class="navbar navbar-expand-md">
         <a class="navbar-brand" href="index.html" style="margin-left: 10px;">
             <img src="assets/logo1.svg" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -113,6 +119,8 @@
                 <p>As you've probably guessed by now, Brown Poker Club is all about poker! As a group, we learn, play,
                     analyze, and even compete from time to time. During meetings, we learn poker concepts such as
                     position, pot odds, hand ranges, etc. and engage in either in-house tournaments or casual play.
+                    <br><br>Our competition team has dominated the annual <a href="https://pokeripa.com/">Intercollegiate Poker Association (IPA)</a> 
+                    tournament for several years, securing first-place victories in 2021 and 2022 (with more on the way)!
                     <br><br>We strive to connect members to each other in order to enable them to play more than just
                     once a week. We welcome anyone from Brown who's interested in poker. Whether you're a complete
                     beginner who would like to learn the rules or a seasoned veteran who'd like to hone their skills,
