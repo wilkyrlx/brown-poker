@@ -17,7 +17,15 @@ body {
     object-fit: cover;
     width:180px;
     height:220px;
+    margin: auto;    
+    display: block;
 }
+
+.person-text {
+    margin-right: 15%;    
+    display: block;
+}
+
 
 /* navbar */
 .navbar {
