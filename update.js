@@ -1,6 +1,4 @@
-function updateAnnouncements() {
-    text = readTextFile("announcements.txt");
-
+function updateAnnouncements(text) {
     var arr = text.split("\n");
     var annList = document.getElementById("announcements-list");
     var docFrag = document.createDocumentFragment();
@@ -30,10 +28,9 @@ function updateGallery() {
 }
 
 function readTextFile(file) {
-
     fetch(file)
         .then(response => response.text())
-        .then(text => console.log(text))
+        .then(text => updateAnnouncements(text))
     
     // outputs the content of the text file
     //var text = "hello | this | is a test \n this is | still | testing";
