@@ -31,8 +31,5 @@ function readTextFile(file) {
     fetch(file)
         .then(response => response.text())
         .then(text => updateAnnouncements(text))
-    
     // outputs the content of the text file
-    //var text = "hello | this | is a test \n this is | still | testing";
-    return text;
 }
