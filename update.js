@@ -30,12 +30,12 @@ function updateGallery() {
 }
 
 function readTextFile(file) {
+
     fetch(file)
         .then(response => response.text())
         .then(text => console.log(text))
     
     // outputs the content of the text file
     //var text = "hello | this | is a test \n this is | still | testing";
-
     return text;
 }
