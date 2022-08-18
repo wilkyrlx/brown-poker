@@ -1,3 +1,7 @@
 function updateAnnouncements() {
-    
+
 } 
+
+function updateGallery() {
+    
+}
