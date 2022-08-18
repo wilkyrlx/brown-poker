@@ -33,7 +33,7 @@
 
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100" onload="readTextFile('announcements.txt')">
     <!-- ## UNIVERSAL 1.4 ## -->
     <!-- A brown horizontal navbar that becomes vertical on small screens with hamburger -->
     <nav class="navbar navbar-expand-md">
@@ -132,26 +132,10 @@
         <div class="row announcements">
             <h1>Announcements</h1>
             <div class="list-group" id="announcements-list">
-                <a href="javascript:;" class="list-group-item list-group-item-action flex-column align-items-start">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">Fall 2022 Activities Fair</h5>
-                      <small>September 9, 2022</small>
-                    </div>
-                    <p class="mb-1">Come find us at our table on the main green and learn about the organization</p>
-                </a>
-                <a href="javascript:;" class="list-group-item list-group-item-action flex-column align-items-start">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">Brown Freeroll</h5>
-                      <small class="text-muted">Late October</small>
-                    </div>
-                    <p class="mb-1">Participate in a tournament hosted by our sponsors</p>
-                 </a>
+                <!-- Empty - announcements added dynamically from announcements.txt -->
             </div>
         </div>
     </div>
-
-    <button onclick="readTextFile('announcements.txt')">Click me</button>
-
 
     <!-- Footer -->
     <footer class="mt-auto">
