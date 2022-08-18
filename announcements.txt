@@ -1,1 +1,2 @@
-TEST 
+Ice Cream|Saturday|ice cream is yummy
+Boba|Friday|even better

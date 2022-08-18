@@ -23,6 +23,7 @@
     
     <!-- custom javascript -->
     <script src="script.js"></script>
+    <script src="update.js"></script>
 
     <!-- Disable caching for development-->
     <meta http-equiv='cache-control' content='no-cache'> 
@@ -130,24 +131,27 @@
         </div>
         <div class="row announcements">
             <h1>Announcements</h1>
-            <div class="list-group">
+            <div class="list-group" id="announcements-list">
                 <a href="javascript:;" class="list-group-item list-group-item-action flex-column align-items-start">
                     <div class="d-flex w-100 justify-content-between">
                       <h5 class="mb-1">Fall 2022 Activities Fair</h5>
                       <small>September 9, 2022</small>
                     </div>
                     <p class="mb-1">Come find us at our table on the main green and learn about the organization</p>
-                  </a>
-                  <a href="javascript:;" class="list-group-item list-group-item-action flex-column align-items-start">
+                </a>
+                <a href="javascript:;" class="list-group-item list-group-item-action flex-column align-items-start">
                     <div class="d-flex w-100 justify-content-between">
                       <h5 class="mb-1">Brown Freeroll</h5>
                       <small class="text-muted">Late October</small>
                     </div>
                     <p class="mb-1">Participate in a tournament hosted by our sponsors</p>
-                  </a>
+                 </a>
             </div>
         </div>
     </div>
+
+    <button onclick="updateAnnouncements()">Click me</button>
+
 
     <!-- Footer -->
     <footer class="mt-auto">
@@ -156,6 +160,15 @@
             
         </div>
     </footer>
+
+    <!-- Empty Templates -->
+    <a href="javascript:;" data-type="template" class="list-group-item list-group-item-action flex-column align-items-start" style="display: none;">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Title</h5>
+          <small>Date</small>
+        </div>
+        <p class="mb-1">Description</p>
+    </a>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
