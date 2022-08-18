@@ -1,5 +1,5 @@
 function updateAnnouncements() {
-    text = readTextFile(announcements.txt);
+    text = readTextFile("announcements.txt");
 
     var arr = text.split("\n");
     var annList = document.getElementById("announcements-list");
