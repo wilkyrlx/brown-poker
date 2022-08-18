@@ -29,6 +29,11 @@ body {
     color: white;
 }
 
+#hamburger {
+    margin-right: 10px;
+    display: inline-block;
+}
+
 /* footer */
 footer {
     background-color: #523528;

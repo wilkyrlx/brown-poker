@@ -1,29 +1,16 @@
-// this code does not actually run yet
+function toggleMenu() {
 
-alert( 'Hello, world!' );
-
-addSlides();
-
-var http = require('http');
-
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('Hello World!');
-}).listen(8080);
-
-function addSlides() {
-    var path = "gallery/";
-    var fs = require('fs');
-    var files = fs.readdirSync('./gallery/');
-    alert(files.length.toString());
-
-    if (files.length == 0) {
-        alert("no files found")
+    var navList = document.getElementById("dropdown");
+    
+    if (navList.style.display === "none") {
+        // display, and show in line
+        navList.classList.remove("d-none");
+        navList.classList.remove("d-md-flex");
+        navList.style.display = "flex";
+    } else {
+        // hide
+        navList.classList.add("d-none");
+        navList.classList.add("d-md-flex");
+        navList.style.display = "none";
     }
-
-    for (const file of files) {
-        console.log(file);
-        alert("!");
-    }
-
 }
