@@ -7,6 +7,7 @@
     <base href="https://wilkyrlx.github.io/brown-poker/">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Required to load all resources as https-->
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
 
@@ -36,7 +37,7 @@
 
 </head>
 
-<body class="d-flex flex-column min-vh-100" onload="readNew('announcements.txt')">
+<body class="d-flex flex-column min-vh-100" onload="readTextFile('announcements.txt')">
     <!-- ## UNIVERSAL 2.1 ## -->
     <!-- A brown horizontal navbar that becomes vertical on small screens with hamburger -->
     <nav class="navbar navbar-expand-md">

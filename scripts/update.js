@@ -28,7 +28,7 @@ function updateGallery() {
 }
 
 function readTextFile(file) {
-    fetch(file, {'mode': 'no-cors'})
+    fetch(file)
         .then(response => response.text())
         .then(text => updateAnnouncements(text))
     // outputs the content of the text file
