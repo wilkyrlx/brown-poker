@@ -27,21 +27,10 @@ function updateGallery() {
 
 }
 
-function readTextFile(file) {
-
-    var fr = new FileReader();
-    fr.onload = function(e) {
-        // e.target.result should contain the text
-        console.log(e.target.result);
-        updateAnnouncements(e.target.result);
-    };
-    fr.readAsText(file);
-
-}
-
 function LoadFile() {
     var oFrame = document.getElementById("frmFile");
     var strRawContents = oFrame.contentWindow.document.body.childNodes[0].innerHTML;
+    updateAnnouncements(strRawContents);
     while (strRawContents.indexOf("\r") >= 0)
         strRawContents = strRawContents.replace("\r", "");
     var arrLines = strRawContents.split("\n");
