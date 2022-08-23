@@ -28,8 +28,13 @@ function updateGallery() {
 }
 
 function readTextFile(file) {
-    fetch(file)
-        .then(response => response.text())
-        .then(text => updateAnnouncements(text))
-    // outputs the content of the text file
+
+    var fr = new FileReader();
+    fr.onload = function(e) {
+        // e.target.result should contain the text
+        console.log(e.target.result);
+        updateAnnouncements(e.target.result);
+    };
+    fr.readAsText(file);
+
 }
