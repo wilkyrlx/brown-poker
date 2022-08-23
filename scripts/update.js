@@ -33,3 +33,8 @@ function readTextFile(file) {
         .then(text => updateAnnouncements(text))
     // outputs the content of the text file
 }
+
+function readNew(file) {
+    const contents = readFileSync(file, 'utf-8');
+    updateAnnouncements(contents);
+}
