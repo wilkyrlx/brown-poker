@@ -1,5 +1,8 @@
-function updateAnnouncements(text) {
-    var arr = text.split("\n");
+function updateAnnouncements() {
+    var oFrame = document.getElementById("frmFile");
+    var strRawContents = oFrame.contentWindow.document.body.childNodes[0].innerHTML;
+
+    var arr = strRawContents.split("\n");
     var annList = document.getElementById("announcements-list");
     var docFrag = document.createDocumentFragment();
 
@@ -27,16 +30,4 @@ function updateGallery() {
 
 }
 
-function LoadFile() {
-    var oFrame = document.getElementById("frmFile");
-    var strRawContents = oFrame.contentWindow.document.body.childNodes[0].innerHTML;
-    updateAnnouncements(strRawContents);
-    while (strRawContents.indexOf("\r") >= 0)
-        strRawContents = strRawContents.replace("\r", "");
-    var arrLines = strRawContents.split("\n");
-    console.log("File " + oFrame.src + " has " + arrLines.length + " lines");
-    for (var i = 0; i < arrLines.length; i++) {
-        var curLine = arrLines[i];
-        console.log("Line #" + (i + 1) + " is: '" + curLine + "'");
-    }
-}
+

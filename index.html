@@ -37,7 +37,7 @@
 
 </head>
 
-<body class="d-flex flex-column min-vh-100" onload="readTextFile('announcements.txt')">
+<body class="d-flex flex-column min-vh-100">
     <!-- ## UNIVERSAL 2.1 ## -->
     <!-- A brown horizontal navbar that becomes vertical on small screens with hamburger -->
     <nav class="navbar navbar-expand-md">
@@ -140,7 +140,8 @@
         </div>
     </div>
 
-    <iframe id="frmFile" src="announcements.txt" onload="LoadFile();" style="display: none;"></iframe>
+    <!-- Invisible iframe, loads announcements file-->
+    <iframe id="frmFile" src="announcements.txt" onload="updateAnnouncements();" style="display: none;"></iframe>
 
 
 
