@@ -26,6 +26,14 @@ body {
     display: block;
 }
 
+.mail {
+    display:inline-block;
+    margin-right:10px;
+} 
+.linkedin {
+    display:inline-block;
+} 
+
 
 /* navbar */
 .navbar {
