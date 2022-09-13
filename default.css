@@ -15,13 +15,15 @@ body {
     width: 90%;
 }
 
+.header-center {
+    margin: auto;
+    margin-bottom: 20px;
+}
 
 .person-image {
     height: 300px;
     object-fit: cover;
 }
-
-
 
 span {
     display: table;
