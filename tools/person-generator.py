@@ -1,6 +1,10 @@
 from bs4 import BeautifulSoup
 import csv
 
+
+# Takes in CSV data. <Replace Poker Website Team Page.csv> with relevant data
+# Google form: https://docs.google.com/forms/d/e/1FAIpQLSdINce8g2cvGoa-hJG30sqk3K-hiq52CLF24IT3MLedzjVXGw/viewform?usp=sf_link 
+
 with open('tools\Poker Website Team Page.csv', 'r') as file:
 
     reader_list = list(csv.reader(file))
