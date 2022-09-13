@@ -9,6 +9,11 @@ body {
 
 
 /* person tabs on the exec-board page */
+.small-middle-container{
+	margin: auto;
+	width: 90%;
+}
+
 .person-row {
     margin-bottom: 30px
 }
