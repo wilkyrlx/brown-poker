@@ -1,5 +1,6 @@
 /* General */
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -9,35 +10,32 @@ body {
 
 
 /* person tabs on the exec-board page */
-.small-middle-container{
-	margin: auto;
-	width: 90%;
+.small-middle-container {
+    margin: auto;
+    width: 90%;
 }
 
-.person-row {
-    margin-bottom: 30px
-}
 
 .person-image {
+    height: 300px;
     object-fit: cover;
-    width:180px;
-    height:220px;
-    margin: auto;    
-    display: block;
 }
 
-.person-text {
-    margin-right: 15%;    
-    display: block;
+
+
+span {
+    display: table;
+    margin: 0 auto;
 }
 
 .mail {
-    display:inline-block;
-    margin-right:10px;
-} 
+    display: inline-block;
+    margin-right: 10px;
+}
+
 .linkedin {
-    display:inline-block;
-} 
+    display: inline-block;
+}
 
 
 /* navbar */
@@ -46,7 +44,8 @@ body {
     margin-bottom: 20px;
 }
 
-.navbar-brand, .nav-link {
+.navbar-brand,
+.nav-link {
     color: white;
 }
 
