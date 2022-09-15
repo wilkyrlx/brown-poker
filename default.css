@@ -8,16 +8,18 @@ body {
     position: relative
 }
 
+.header-center {
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
 
 /* person tabs on the exec-board page */
 .small-middle-container {
     margin: auto;
     width: 90%;
-}
-
-.header-center {
-    margin: auto;
-    margin-bottom: 20px;
 }
 
 .person-image {
@@ -31,7 +33,7 @@ body {
     transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
 
-span {
+.person-span {
     display: table;
     margin: 0 auto;
 }
@@ -78,4 +80,16 @@ footer {
 /* announcements */
 .announcements {
     margin-bottom: 20px;
+}
+
+/* sponsors */
+#citadel-logo {
+    object-fit: contain;
+    margin-left: 5px;
+    margin-top: 5%;
+}
+
+#sig-logo {
+    object-fit: contain;
+    margin-right: 5px;
 }
