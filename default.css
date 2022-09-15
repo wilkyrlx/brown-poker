@@ -10,7 +10,7 @@ body {
 
 .header-center {
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
@@ -92,4 +92,9 @@ footer {
 #sig-logo {
     object-fit: contain;
     margin-right: 5px;
+}
+
+/* contact */
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #523528 !important;
 }
