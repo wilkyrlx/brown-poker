@@ -71,10 +71,10 @@ footer {
 
 .footer-text {
     color: white;
-}
-
-.footer-text-link {
-    color: lightblue;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: small;
 }
 
 /* announcements */
