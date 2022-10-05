@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Comment
 import csv
 
 
@@ -14,6 +14,7 @@ with open('tools\input.csv', 'r') as file:
         description = row[3]
         email = row[4]
         linkedin = row[5]
+        # image link - row[6]
         image_name = row[7]
 
         # Open test.html for reading
@@ -34,6 +35,10 @@ with open('tools\input.csv', 'r') as file:
                 
             # change image
             soup.find("img")['src'] = "images\\headshots\\" + image_name
+
+            # add comments to beginning and end for delineation
+            soup.insert(0, Comment(f' Team Member - {name} '))
+            soup.append(Comment(f' End - {name} '))    
             
             unformatted_tag_list = []
             for i, tag in enumerate(soup.find_all(['h5', 'div'])):
