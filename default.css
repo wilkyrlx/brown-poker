@@ -14,7 +14,12 @@ body {
     text-align: center;
 }
 
-
+.sponsor-header-center {
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 0px;
+    text-align: center;
+}
 
 
 /* person tabs on the exec-board page */
