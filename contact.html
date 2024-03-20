@@ -1,122 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Join</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="default.css" />
 
     <!-- custom javascript -->
     <script src="scripts/main.js"></script>
-</head>
+  </head>
 
-<body class="d-flex flex-column min-vh-100">
+  <body class="d-flex flex-column min-vh-100">
     <!-- ## UNIVERSAL 2.3 ## -->
     <!-- A brown horizontal navbar that becomes vertical on small screens with hamburger -->
     <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand" href="index.html" style="margin-left: 10px;">
-            <img src="assets/logo1.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-            Brown Poker Club
-        </a>
+      <a class="navbar-brand" href="index.html" style="margin-left: 10px">
+        <img
+          src="assets/logo1.svg"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        Brown Poker Club
+      </a>
 
-        <!-- Hamburger icon. Hides on screens smaller than medium -->
-        <a class="d-md-none" href="javascript:" id="hamburger" onclick="toggleMenu()">
-            <img src="assets/hamburger-white.svg" width="30" height="30">
-        </a>
-        
-        <div class="navbar-collapse container-fluid">
-            <!-- Links -->
-            <!-- display is none for mobile, starts hidden. Overridden by d-md-flex for medium+ screens -->
-            <ul class="navbar-nav d-none d-md-flex" id="dropdown" style="display: none;">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="exec-board.html">Club Leaders</a></li>
-                <li class="nav-item"><a class="nav-link" href="ipa-team.html">IPA Team</a></li>
-                <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>
-            </ul>
-        </div>
+      <!-- Hamburger icon. Hides on screens smaller than medium -->
+      <a
+        class="d-md-none"
+        href="javascript:"
+        id="hamburger"
+        onclick="toggleMenu()"
+      >
+        <img src="assets/hamburger-white.svg" width="30" height="30" />
+      </a>
+
+      <div class="navbar-collapse container-fluid">
+        <!-- Links -->
+        <!-- display is none for mobile, starts hidden. Overridden by d-md-flex for medium+ screens -->
+        <ul
+          class="navbar-nav d-none d-md-flex"
+          id="dropdown"
+          style="display: none"
+        >
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="exec-board.html">Club Leaders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ipa-team.html">IPA Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sponsors.html">Sponsors</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <div class="container">
-        <div class="join">
-            <h1 class="header-center">Join Now!</h1>
-            <p>Anyone is welcome to join poker club - no experience required! Our members include casino-hardened
-                veterans looking to connect over action,
-                casual players looking to improve their grasp on poker theory, and beginning players who are excited to
-                dive down the rabbit hole. If you
-                want to learn how to crush at the felt and have fun doing it, come by one of our meetings!<br><br>
-                <strong>What to expect:</strong> Our meetings typically involve a brief analysis of some aspect of poker
-                followed by either an in-house tournament or casual play. <br>
-                <strong>Time:</strong> 7:30 PM - 9:30 PM, Thursdays <br>
-                <strong>Location:</strong> Petteruti Lounge, Campus Center 2nd Floor (room may occasionally be subject to change)
-            </p>
-        </div>
+      <div class="join">
+        <h1 class="header-center">Join Now!</h1>
+        <p>
+          Anyone is welcome to join poker club - no experience required! Our
+          members include casino-hardened veterans looking to connect over
+          action, casual players looking to improve their grasp on poker theory,
+          and beginning players who are excited to dive down the rabbit hole. If
+          you want to learn how to crush at the felt and have fun doing it, come
+          by one of our meetings!<br /><br />
+          <strong>What to expect:</strong> Our meetings typically involve a
+          brief analysis of some aspect of poker followed by either an in-house
+          tournament or casual play. <br />
+          <strong>Time:</strong> 7:30 PM - 9:30 PM, Thursdays <br />
+          <strong>Location:</strong> Petteruti Lounge, Campus Center 2nd Floor
+          (room may occasionally be subject to change)
+        </p>
+      </div>
 
-
-
-        <h1 class="header-center">Contact Us</h1>
-        <div class="small-middle-container">
-            <div class="row justify-content-center">
-                <div class="col-xl-3 col-md-6 mb-4">
-                    <div class="card border-0 shadow h-100">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Contact</h5>
-                            <p class="card-text">Please feel free to reach out and email us with questions or sponsorship
-                                inquiries.</p>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <a href="mailto:pokerclub@brown.edu" class="btn btn-primary center-span">pokerclub@brown.edu</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 mb-4">
-                    <div class="card border-0 shadow h-100">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Mailing List</h5>
-                            <p class="card-text">Join our mailing list to get updates for important events.</p>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <a href="https://listserv.brown.edu/cgi-bin/wa?SUBED1=POKER&A=1" class="btn btn-primary center-span">Mailing List</a>
-                        </div>
-                    </div>
-                </div>    
-                <div class="col-xl-3 col-md-6 mb-4">
-                    <div class="card border-0 shadow h-100">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Facebook</h5>
-                            <p class="card-text">Follow us on Facebook!</p>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <a href="https://www.facebook.com/BrownPokerClub/" class="btn btn-primary center-span">Brown Poker Facebook</a>
-                        </div>
-                    </div>
-                </div>       
+      <h1 class="header-center">Contact Us</h1>
+      <div class="small-middle-container">
+        <div class="row justify-content-center">
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow h-100">
+              <div class="card-body">
+                <h5 class="card-title text-center">Contact</h5>
+                <p class="card-text">
+                  Please feel free to reach out and email us with questions or
+                  sponsorship inquiries.
+                </p>
+              </div>
+              <div class="card-footer bg-transparent">
+                <a
+                  href="mailto:benjamin-shih@brown.edu"
+                  class="btn btn-primary center-span"
+                  >benjamin-shih@brown.edu</a
+                >
+              </div>
             </div>
+          </div>
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow h-100">
+              <div class="card-body">
+                <h5 class="card-title text-center">Mailing List</h5>
+                <p class="card-text">
+                  Join our mailing list to get updates for important events.
+                </p>
+              </div>
+              <div class="card-footer bg-transparent">
+                <a
+                  href="https://listserv.brown.edu/cgi-bin/wa?SUBED1=POKER&A=1"
+                  class="btn btn-primary center-span"
+                  >Mailing List</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow h-100">
+              <div class="card-body">
+                <h5 class="card-title text-center">Facebook</h5>
+                <p class="card-text">Follow us on Facebook!</p>
+              </div>
+              <div class="card-footer bg-transparent">
+                <a
+                  href="https://www.facebook.com/BrownPokerClub/"
+                  class="btn btn-primary center-span"
+                  >Brown Poker Facebook</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- ## UNIVERSAL 1.0 ## -->
     <!-- Footer -->
     <footer class="mt-auto">
-        <div class="container">
-            <p class="footer-text">Poker is a game of probability, skill, and luck. The Brown Poker Club does not endorse any form of gambling</p>
-            <p class="footer-text">Copyright © John Wilkinson 2022. All rights reserved. </p>
-        </div>
+      <div class="container">
+        <p class="footer-text">
+          Poker is a game of probability, skill, and luck. The Brown Poker Club
+          does not endorse any form of gambling
+        </p>
+        <p class="footer-text">
+          Copyright © John Wilkinson 2022. All rights reserved.
+        </p>
+      </div>
     </footer>
 
-
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
